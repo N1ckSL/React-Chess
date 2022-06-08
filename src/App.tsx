@@ -41,7 +41,7 @@ const App = () => {
         currentPlayer={currentPlayer}
         swapPlayer={swapPlayer}
       />
-      <div>
+      <div className='figures-wrap'>
         <LostFigures
           title="Black Figures"
           figures={board.lostBlackFigures}

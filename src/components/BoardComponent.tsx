@@ -42,7 +42,7 @@ const BoardComponent: FC<BoardProps> = ({board, setBoard, currentPlayer, swapPla
   }
 
   return (
-    <div>
+    <div className='board-wrap'>
       <h3 className='current-player'>Current Player: {currentPlayer?.color}</h3>
       <div className="board">
         {board.cells.map((row, index) =>

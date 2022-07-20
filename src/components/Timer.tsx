@@ -30,14 +30,14 @@ const Timer: FC<TimerProps> = ({ currentPlayer, restart }) => {
   function decrementBlackTimer() {
     setBlackTime((prev) => prev - 1);
   }
-
+  
   function decrementWhiteTimer() {
     setWhiteTime((prev) => prev - 1);
   }
 
   const handleRestart = () => {
-    setWhiteTime(500);
     setBlackTime(500);
+    setWhiteTime(500);
     restart();
   };
 
